@@ -31,7 +31,7 @@ header {
 
 main {
   align-items: center;
-  padding: 25px;
+  padding: 15px;
   margin: 20px auto;
   text-align: center;
 }
@@ -61,9 +61,8 @@ h1 {
 
 .content {
   margin: 100px auto 25px;
-  width: 99%;
   background-color: #222;
-  padding: 30px;
+  padding: 20px;
   border-radius: 15px;
   align-items: center;
 }
@@ -126,7 +125,7 @@ footer {
     font-size: 12px;
   }
   .video {
-    width: 400px;
+    width: 350px;
   }
   .video-item {
     flex-direction: column;
@@ -134,8 +133,12 @@ footer {
   h1 {
     font-size: 5em;
   }
-  .contact-item {font-size: 14px;}
-  .icon {width: 25px;}
+  .contact-item a {
+    font-size: 14px;
+  }
+  .icon {
+    width: 25px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -143,7 +146,7 @@ footer {
     font-size: 10px;
   }
   .video {
-    width: 250px;
+    width: 200px;
   }
   .video-item {
     flex-direction: column;
@@ -151,9 +154,17 @@ footer {
   h1 {
     font-size: 3em;
   }
-  .contact-item {font-size: 12px;}
-  .icon {width: 20px;}
-  .content, footer {
+  .contact-item a {
+    font-size: 12px;
+  }
+  .icon {
+    width: 20px;
+  }
+  .content,
+  footer {
     margin-bottom: 15px;
+  }
+  .footer-image img {
+    width: 75px;
   }
 }
