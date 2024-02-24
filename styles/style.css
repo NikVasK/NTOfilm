@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "DejaVuSans";
+  src: url("/font/DejaVuSans.ttf");
+}
+
+@font-face {
+  font-weight: 200;
+  font-family: "DejaVuSans";
+  src: url("/font/DejaVuSans-ExtraLight.ttf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "DejaVuSans";
+  src: url("/font/DejaVuSans-Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "DejaVuSans", sans-serif;
+  align-items: center;
+  font-size: 16px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+main {
+  width: 95%;
+  align-items: center;
+  padding: 25px;
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px auto;
+  font-weight: 300;
+  font-size: 7.7em;
+}
+
+.video {
+  width: 600px;
+}
+
+.first-line {
+  display: block;
+  font-weight: 200;
+  font-size: 0.27em;
+  margin-bottom: 0;
+}
+
+.main-heading {
+  font-weight: 900;
+}
+
+.content {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.block-heading {
+  margin: 35px;
+  color: goldenrod;
+}
+
+.item-heading {
+  margin: 20px;
+  color: rgba(255, 183, 0, 0.801);
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 12px;
+  }
+  .video {
+    width: 450px;
+  }
+}
+
+@media (max-width: 620px) {
+  body {
+    font-size: 10px;
+  }
+  .video {
+    width: 300px;
+  }
+}
