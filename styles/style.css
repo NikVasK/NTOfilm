@@ -13,6 +13,12 @@ a {
   color: rgba(255, 183, 0, 0.801);
 }
 
+a:hover,
+a:focus {
+  color: aliceblue;
+  outline: 0.5px solid rgb(255, 183, 0);
+}
+
 body {
   background-color: black;
   color: white;
@@ -45,7 +51,8 @@ h1 {
 }
 
 .video {
-  width: 600px;
+  width: 768px;
+  max-width: 1024px;
 }
 
 .first-line {
@@ -61,7 +68,7 @@ h1 {
 
 .content {
   margin: 100px auto 25px;
-  background-color: #222;
+  background: linear-gradient(135deg, #111, #555);
   padding: 20px;
   border-radius: 15px;
   align-items: center;
@@ -79,8 +86,9 @@ h1 {
 }
 
 .video-item {
+  max-width: 1200px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   border: 0.5px solid rgba(255, 183, 0, 0.801);
@@ -102,10 +110,14 @@ h1 {
 
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 25px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
 }
 
 .contact-item {
@@ -117,48 +129,78 @@ footer {
   width: 30px;
   height: 30px;
   background-color: white;
-  transform: translateY(8px);
+  transform: translateY(5px);
 }
 
-@media (max-width: 1100px) {
+.award-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.award-item {
+  max-width: 200px;
+  max-height: 200px;
+  align-items: center;
+  margin: 5px;
+}
+
+.award-item img {
+  width: 50%;
+}
+
+.award-item img:hover {
+  transform: scale(3.5);
+  transition: 0.3s ease-in;
+}
+@media (min-width: 1920px) {
+  .video {
+    width: 1024px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+  .video {
+    width: 512px;
+  }
+  h1 {
+    font-size: 6em;
+  }
+  .contact-item a {
+    font-size: 16px;
+  }
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+  .award-item {
+    max-width: 120px;
+    max-height: 120px;
+  }
+}
+
+@media (max-width: 640px) {
   body {
     font-size: 12px;
   }
   .video {
-    width: 350px;
+    width: 310px;
   }
-  .video-item {
-    flex-direction: column;
-  }
+
   h1 {
-    font-size: 5em;
+    font-size: 4em;
   }
   .contact-item a {
     font-size: 14px;
   }
   .icon {
-    width: 25px;
-  }
-}
-
-@media (max-width: 650px) {
-  body {
-    font-size: 10px;
-  }
-  .video {
-    width: 200px;
-  }
-  .video-item {
-    flex-direction: column;
-  }
-  h1 {
-    font-size: 3em;
-  }
-  .contact-item a {
-    font-size: 12px;
-  }
-  .icon {
     width: 20px;
+    height: 20px;
   }
   .content,
   footer {
@@ -166,5 +208,21 @@ footer {
   }
   .footer-image img {
     width: 75px;
+  }
+  .award-item {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+@media (max-width: 390px) {
+  .video {
+    width: 256px;
+  }
+  body {
+    font-size: 10px;
+  }
+  .award-item {
+    max-width: 50px;
+    max-height: 50px;
   }
 }
